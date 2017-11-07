@@ -210,8 +210,8 @@
     //   $(selector).chosen(config[selector]);
     // }
   
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
+    $("#submit").on("click", function() {
+      // event.preventDefault();
     
       function validateForm() {
         var isValid = true;
@@ -262,10 +262,10 @@
           alert("working");
 
         });
-      } else {
-        alert("Please fill out all fields before submitting!");
-      }
-    });
+    //   } else {
+    //     alert("Please fill out all fields before submitting!");
+    //   }
+    // });
   </script>
 
 </body>

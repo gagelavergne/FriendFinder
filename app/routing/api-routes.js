@@ -17,7 +17,7 @@ module.exports = function (app) {
     	var userData = req.body;
    		var userScores = userData.scores;
 
-   		var totalDifference;
+   		var totalDifference = 0;
 
     for (var i = 0; i < friends.length; i++) {
       var currentFriend = friends[i];
@@ -42,6 +42,7 @@ module.exports = function (app) {
         bestMatch.friendDifference = totalDifference;
       }
     }
+}
 
  
     friends.push(userData);
