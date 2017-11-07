@@ -42,7 +42,7 @@ module.exports = function (app) {
         bestMatch.friendDifference = totalDifference;
       }
     }
-}
+
 
  
     friends.push(userData);
